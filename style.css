@@ -285,24 +285,24 @@ footer {
 }
 
 .image-container {
-  position: relative;
-  display: inline-block;
+  position: relative;           /* makes absolute button sit on top */
+  display: inline-block;        /* shrink-wrap image */
 }
 
 .image-container img {
   display: block;
-  width: 100%; /* or fixed size */
+  width: 100%;
   height: auto;
 }
 
 .invisible-btn {
   position: absolute;
-  top: 20%;    /* adjust position */
-  left: 30%;   /* adjust position */
-  width: 50px; /* size of clickable area */
-  height: 50px;
+  top: 0;                       /* top-left of image */
+  left: 0;
+  width: 100%;                  /* covers entire image */
+  height: 100%;
   background: transparent;
   border: none;
   cursor: pointer;
-  opacity: 0;
+  opacity: 0;                   /* fully invisible */
 }
