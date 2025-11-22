@@ -283,28 +283,3 @@ footer {
   min-height: 100%;
   text-align: center;
 }
-
-.image-container {
-  position: relative;       /* needed for absolute positioning */
-  display: inline-block;    /* keeps image sizing */
-  width: 50%;               /* match your image width */
-}
-
-.image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Responsive hotspot */
-.invisible-btn {
-  position: absolute;
-  top: 35%;                 /* vertical position relative to image */
-  left: 40%;                /* horizontal position relative to image */
-  width: 10%;               /* size relative to image width */
-  height: 15%;              /* size relative to image height */
-  background: transparent;  /* invisible */
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-}
