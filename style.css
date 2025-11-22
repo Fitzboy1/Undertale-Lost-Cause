@@ -285,24 +285,24 @@ footer {
 }
 
 .image-container {
-  position: relative;           /* makes absolute button sit on top */
-  display: inline-block;        /* shrink-wrap image */
+  position: relative;       /* needed for absolute button positioning */
+  display: inline-block;    /* keeps image size */
 }
 
 .image-container img {
   display: block;
-  width: 100%;
+  width: 100%;              /* keeps your 50% width from HTML */
   height: auto;
 }
 
 .invisible-btn {
-  position: absolute;
-  top: 0;                       /* top-left of image */
-  left: 0;
-  width: 100%;                  /* covers entire image */
-  height: 100%;
-  background: transparent;
+  position: absolute;       /* sits on top of the image */
+  top: 30%;                 /* adjust vertical position */
+  left: 40%;                /* adjust horizontal position */
+  width: 50px;              /* size of hotspot */
+  height: 50px;
+  background: transparent;  /* invisible */
   border: none;
   cursor: pointer;
-  opacity: 0;                   /* fully invisible */
+  opacity: 0;
 }
