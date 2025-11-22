@@ -283,3 +283,26 @@ footer {
   min-height: 100%;
   text-align: center;
 }
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%; /* or fixed size */
+  height: auto;
+}
+
+.invisible-btn {
+  position: absolute;
+  top: 20%;    /* adjust position */
+  left: 30%;   /* adjust position */
+  width: 50px; /* size of clickable area */
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+}
