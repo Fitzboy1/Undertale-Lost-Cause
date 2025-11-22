@@ -283,3 +283,7 @@ footer {
   min-height: 100%;
   text-align: center;
 }
+
+#invisible {
+  opacity:0;
+}
