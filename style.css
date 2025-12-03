@@ -289,7 +289,7 @@ footer {
 }
 
 .img-button-wrap {
-  position: relative;
+  position: relative;  /* ensures button is positioned relative to image */
   display: inline-block;
 }
 
@@ -297,42 +297,31 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20px;
+  width: 20px;       /* small, adjustable */
   height: 20px;
   transform: translate(-50%, -50%);
 
-  /* True invisibility */
   background: none !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
 
-  /* Remove all browser styling */
   appearance: none !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
 
-  /* No content, no text, nothing */
   padding: 0 !important;
   margin: 0 !important;
   color: transparent !important;
   font-size: 0 !important;
-
-  /* No hover/focus flash */
   cursor: pointer;
 }
 
-.invisible-btn:focus,
 .invisible-btn:hover,
+.invisible-btn:focus,
 .invisible-btn:active {
   outline: none !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-}
-
-.invisible-btn::before,
-.invisible-btn::after {
-  content: "" !important;
-  display: none !important;
 }
